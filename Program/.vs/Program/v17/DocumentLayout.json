@@ -7,10 +7,13 @@
       "RelativeMoniker": "D:0:0:{16B7CA70-4678-4C22-B819-012C91CDE2AA}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11D8B462-FFCC-4A54-892F-B7BDC7750A3B}|..\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).vcxproj|C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95911760-0B26-40FA-BBED-449031AFA4C2}|..\\Class8th(BreadthFirstSearch)\\Class8th(BreadthFirstSearch).vcxproj|C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class8th(BreadthFirstSearch)\\Source8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ACF0E64-D1A6-4712-B3CA-B52130965200}|..\\Class6th(QuickSort)\\Class6th(QuickSort).vcxproj|C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class6th(QuickSort)\\Source6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D8B462-FFCC-4A54-892F-B7BDC7750A3B}|..\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).vcxproj|C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,8 +22,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 183,
-          "SelectedChildIndex": 8,
+          "DockedWidth": 194,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,12 +52,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Source8.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class8th(BreadthFirstSearch)\\Source8.cpp",
+              "RelativeDocumentMoniker": "..\\Class8th(BreadthFirstSearch)\\Source8.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class8th(BreadthFirstSearch)\\Source8.cpp",
+              "RelativeToolTip": "..\\Class8th(BreadthFirstSearch)\\Source8.cpp",
+              "ViewState": "AQIAADwAAAAAAAAAAAAcwGcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-18T12:19:24.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Class7th(DepthFirstSearch).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).cpp",
               "RelativeDocumentMoniker": "..\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).cpp",
               "RelativeToolTip": "..\\Class7th(DepthFirstSearch)\\Class7th(DepthFirstSearch).cpp",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAcwG0AAAABAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAEoAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-17T12:43:00.175Z",
               "EditorCaption": ""
@@ -67,7 +83,7 @@
               "RelativeDocumentMoniker": "..\\Class6th(QuickSort)\\Source6.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Class6th(QuickSort)\\Source6.cpp",
               "RelativeToolTip": "..\\Class6th(QuickSort)\\Source6.cpp",
-              "ViewState": "AQIAADMAAAAAAAAAAAAcwFsAAAAAAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-17T11:01:22.014Z",
               "EditorCaption": ""
@@ -80,7 +96,7 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\\uC774\uC7AC\uD604\uC758 \uC54C\uACE0\uB9AC\uC998\\algorithm\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-09T11:06:14.842Z",
               "EditorCaption": ""
