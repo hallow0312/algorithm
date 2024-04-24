@@ -2,6 +2,9 @@
 using namespace std;
 #define SIZE 9
 
+
+
+
 class UnionFind
 {
 private:
@@ -78,7 +81,7 @@ public:
 		cout << endl;
 	}
 
-
+	
 };
 
 int main()
@@ -103,7 +106,7 @@ int main()
 	cout << unionfind.Same(4, 5) << endl;
 	cout << unionfind.Same(5, 6) << endl;
 
-
+	
 
 #pragma endregion
 
