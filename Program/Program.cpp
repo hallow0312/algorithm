@@ -1,55 +1,178 @@
 ﻿#include <iostream>
+#include <limits.h>
 using namespace std;
 
+#define SIZE 5
+#define INF INT_MAX-100000
 
+class Graph
+{
+
+private:
+	bool visited[SIZE];
+
+	int distance[SIZE];
+
+	int map[SIZE][SIZE];
+
+
+public:
+
+	Graph()
+	{
+		for (int i = 0; i < SIZE; i++)
+		{	
+			distance[i] = 0;
+			visited[i] = false;
+			for (int j = 0; j < SIZE; j++)
+			{
+				map[i][j] = 0;
+			}
+		}
+	}
+	void SettingMap(int y, int x, int distance)
+	{
+		map[y][x] = distance;
+	}
+	
+	int SmallNode()
+	{
+		//최소 비용을 찾아주는 함수 
+		int Min = INF;
+		int index = 0;
+		
+		for (int i = 0; i < SIZE; i++)
+		{
+			if (visited[i] == true)
+			{
+				continue;
+			}
+
+			if  (Min > distance[i])
+			{
+			
+				Min = distance[i];
+				index = i;
+			
+			}
+			
+			
+		}
+
+		return index;
+
+	}
+	void Dijkstra(int start)
+	{	
+		visited[start] = true;
+
+		for (int i = 0; i < SIZE; i++)
+		{
+			distance[i] = map[start][i];
+		}
+		for (int i = 0; i < SIZE-1; i++)
+		{
+
+			int find = SmallNode(); //최소비용 노드 탐색 
+			cout << find << endl;
+			visited[find] = true;
+			for (int j = 0; j < SIZE ; j++)
+			{	
+				// 방문하지 않은 노드 중에서 시작점이 최소 비용노드를 
+				// 경유하는게 더 가까운값을 갱신함 .
+
+				if (visited[j] == true)
+				{
+					continue;
+				}
+
+				
+				if (distance[j] > distance[find] + map[find][j] )
+				{
+					distance[j] = distance[find] + map[find][j];
+				}
+
+			}
+			
+
+		}
+
+
+	}
+	void Distance()
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			cout << distance[i] << " ";
+		}
+	}
+
+};
 
 int main()
 {
-#pragma region 탐욕법 (Greedy)
-	// 최적의 해를 구하는 데에 사용되는 근사적인 
-	// 방법으로 , 여러 경우 중 하나를 결정해야 할 때마다 
-	// 그 순간에 최적이라고 생각되는것을 선택해 나가는 
-	// 방식으로 진행하여 최종적인 해답을 구하는 알고리즘 
 
-	// 탐욕 선택 속성 
-	// 각 단계에서 최선의 선택을 했을 때 전체 문제에 대한 최적의 
-	// 해를 구할 수 있는 경우 
+#pragma region 다익스트라 알고리즘 
+
+	// 시작점으로부터 모든 노드까지의 최소거리를 구해주는 
+	// 알고리즘.
+
+	// 1. distance 배열의 weight [시작점 노드 ] 의 값들로 초기화 시켜줌 
+
+	//2. 시작점 방문 처리
+
+	//3. Distance 배열에서 최소 비용 노드를 찾고 방문처리 
+	// 단 이미 방문한 노드는 제외 
+
+	// 4. 최소비용 노드를 거쳐갈지 고려해서 distance 배열을 갱신한다.
+	// 방문 노드는 역시 제외 
+
+	//5. 모든 노드를 방문 할 때 까지 3~4 반복 .
+
+	// 방문하지 않은 노드 중에서 가장 작은 distance를 가진 노드를 방문하고 , 그노드와 연결된 다른 노드 까지의 거리를 계산한다 .
+
+
+	Graph graph;
+	graph.SettingMap(0, 0, 0);
+	graph.SettingMap(0, 1, 7);
+	graph.SettingMap(0, 2, 4);
+	graph.SettingMap(0, 3, 6);
+	graph.SettingMap(0, 4, 1);
+
+	graph.SettingMap(1, 0, INF);
+	graph.SettingMap(1, 1, 0);
+	graph.SettingMap(1, 2, INF);
+	graph.SettingMap(1, 3, INF);
+	graph.SettingMap(1, 4, INF);
+
+	graph.SettingMap(2, 0, INF);
+	graph.SettingMap(2, 1, 2);
+	graph.SettingMap(2, 2, 0);
+	graph.SettingMap(2, 3, 5);
+	graph.SettingMap(2, 4, INF);
+
+	graph.SettingMap(3, 0, INF);
+	graph.SettingMap(3, 1, 3);
+	graph.SettingMap(3, 2, INF);
+	graph.SettingMap(3, 3, 0);
+	graph.SettingMap(3, 4, INF);
+
+	graph.SettingMap(4, 0, INF);
+	graph.SettingMap(4, 1, INF);
+	graph.SettingMap(4, 2, INF);
+	graph.SettingMap(4, 3, 1);
+	graph.SettingMap(4, 4, INF);
 	
-	// 최적 부분 구조 
-	// 전체 문제의 최적의 해가 ' 부분 문제의 최적의 해로 구성 '될 
-	// 수 있는 경우 
-
-	// 그리디 알고리즘의 단계 
+	graph.Dijkstra(0);
+	graph.Distance();
 	
-	//1. 문제의 최적해 구조를 결정
 
-	//2. 문제의 구조에 맞게 선택 절차 정의 
-
-	//3. 선택 절차에따라 선택을 수행 
-
-	//4. 선택된 해가 문제의 조건을 만족하는지 검사합니다 .
-	
-	//5. 조건을 만족하지 않으면 해당 해를 제외
-
-	//6. 모든선택이 완료되면 해답 검사 
-
-	//7. 조건을 만족하지 않으면 해답으로 인정 안됌 .
-
-	int coin[4] = { 500,100,50,10 };
-	 
-	int money = 1230;
-	int count=0;
-	int i = 0;
-	while (money != 0&&i<4)
-	{
-		count += money / coin[i];
-		money =money% coin[i];
-		i++;
-
-	}
-	cout << count;
 #pragma endregion
 
+
+
+
+	
 
 
 
