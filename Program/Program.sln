@@ -35,7 +35,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class15th(Floyd_Warshall)",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class16th(Brute_Force)", "..\Class16th(Brute_Force)\Class16th(Brute_Force).vcxproj", "{C5542DED-0255-4038-A75D-73B8C3B882E9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class17th(Hanoi_Tower)", "..\Class17th(Hanoi_Tower)\Class17th(Hanoi_Tower).vcxproj", "{D94DF2F0-E897-4766-8EFC-DAE55CE3BCD2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class17th(Back_Tracking)", "..\Class17th(Hanoi_Tower)\Class17th(Hanoi_Tower).vcxproj", "{D94DF2F0-E897-4766-8EFC-DAE55CE3BCD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class18th(Eculid Algorithm)", "..\Class18th(Eculid Algorithm)\Class18th(Eculid Algorithm).vcxproj", "{84F9A471-17F5-4B51-8312-B69F48AFA8A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +183,14 @@ Global
 		{D94DF2F0-E897-4766-8EFC-DAE55CE3BCD2}.Release|x64.Build.0 = Release|x64
 		{D94DF2F0-E897-4766-8EFC-DAE55CE3BCD2}.Release|x86.ActiveCfg = Release|Win32
 		{D94DF2F0-E897-4766-8EFC-DAE55CE3BCD2}.Release|x86.Build.0 = Release|Win32
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Debug|x64.ActiveCfg = Debug|x64
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Debug|x64.Build.0 = Debug|x64
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Debug|x86.ActiveCfg = Debug|Win32
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Debug|x86.Build.0 = Debug|Win32
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Release|x64.ActiveCfg = Release|x64
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Release|x64.Build.0 = Release|x64
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Release|x86.ActiveCfg = Release|Win32
+		{84F9A471-17F5-4B51-8312-B69F48AFA8A8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
